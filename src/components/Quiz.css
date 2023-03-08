@@ -1,0 +1,14 @@
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+.mode {
+    width: 10rem;
+}
+
+.bi-arrow-repeat::before {
+    transform: scale(1.5);
+    transition: transform 0.5s;
+}
+
+.bi-arrow-repeat.upside-down::before {
+    transform: scale(1.5) rotate(180deg);
+}

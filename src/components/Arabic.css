@@ -1,0 +1,5 @@
+@import "../../node_modules/@fontsource/scheherazade-new/index.css";
+
+.Arabic {
+    font-family: "Scheherazade New", sans-serif;
+}

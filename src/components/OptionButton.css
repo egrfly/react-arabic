@@ -1,0 +1,11 @@
+.OptionButton--correct {
+    background-color: green;
+}
+
+.OptionButton--incorrect {
+    background-color: red;
+}
+
+.OptionButton--selected {
+    background-color: deepskyblue;
+}
