@@ -4,8 +4,8 @@ import "./App.css"
 
 const App = () => {
     return (
-        <main className="p-5 bg-dark text-light text-center">
-            <h1 className="mb-4">Arabic Abjad (Alphabet)</h1>
+        <main className="App">
+            <h1>Arabic Abjad (Alphabet)</h1>
             <Quiz />
         </main>
     )

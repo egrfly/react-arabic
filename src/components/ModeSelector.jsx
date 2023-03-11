@@ -1,13 +1,15 @@
 import React from "react"
+import Button from "./Button.jsx"
+import "./ModeSelector.css"
 
 function ModeSelector({ questionMode, answerMode, reverseQuestionAndAnswerModes, reversedQuestionAndAnswerModes }) {
     return (
         <div className="ModeSelector">
-            <div>{questionMode.name}</div>
-            <button onClick={reverseQuestionAndAnswerModes}>
+            <div className="ModeSelector__Mode">{questionMode.name}</div>
+            <Button className="ModeSelector__Button" onClick={reverseQuestionAndAnswerModes}>
                 <i className={`bi bi-arrow-repeat ${reversedQuestionAndAnswerModes ? "upside-down" : ""}`}></i>
-            </button>
-            <div>{answerMode.name}</div>
+            </Button>
+            <div className="ModeSelector__Mode">{answerMode.name}</div>
         </div>
     )
 }

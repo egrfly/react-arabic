@@ -1,11 +1,22 @@
-.OptionButton--correct {
-    background-color: green;
+.OptionButton {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
 }
 
-.OptionButton--incorrect {
-    background-color: red;
+.OptionButton.OptionButton--correct {
+    background-color: #60cc60;
 }
 
-.OptionButton--selected {
-    background-color: deepskyblue;
+.OptionButton.OptionButton--incorrect {
+    background-color: #f06c6c;
+}
+
+.OptionButton.OptionButton--selected {
+    background-color: #44d0ff;
+}
+
+.OptionButton.OptionButton--unclickable {
+    pointer-events: none;
 }

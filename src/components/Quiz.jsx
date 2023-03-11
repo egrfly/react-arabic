@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import ModeSelector from "./ModeSelector.jsx"
 import OptionButton from "./OptionButton.jsx"
+import Button from "./Button.jsx"
 import modes from "../data/modes.jsx"
 import { generateNextOptionLetters, generateNextTargetLetter } from "../helpers/letterGenerator.js"
 import "./Quiz.css"
@@ -42,8 +43,8 @@ function AlphabetQuiz() {
                 ?
                     <>
                         <div>
-                            <div>{questionMode.selector(targetLetter)}</div>
-                            <div>
+                            <div className="Quiz__TargetLetter">{questionMode.selector(targetLetter)}</div>
+                            <div className="Quiz__OptionButtons">
                                 {optionLetters.map(letter =>
                                     <OptionButton optionLetter={letter}
                                                   targetLetter={targetLetter}
@@ -57,12 +58,16 @@ function AlphabetQuiz() {
                         </div>
                         {
                             checkingState
-                                ? <button onClick={refreshLetter}>Continue</button>
-                                : <button onClick={() => setCheckingState(true)} disabled={!selectedLetter}>Check</button>
+                                ? <Button className="Quiz__ControlButton"
+                                          onClick={refreshLetter}>Continue</Button>
+                                : <Button className="Quiz__ControlButton"
+                                          onClick={() => setCheckingState(true)}
+                                          disabled={!selectedLetter}>Check</Button>
                         }
                     </>
                 :
-                    <button onClick={refreshLetter}>Start</button>
+                    <Button className="Quiz__ControlButton"
+                            onClick={refreshLetter}>Start</Button>
             }
         </div>
     )

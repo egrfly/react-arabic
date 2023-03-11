@@ -1,14 +1,16 @@
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
-
-.mode {
-    width: 10rem;
+.Quiz .Quiz__TargetLetter {
+    height: 4rem;
+    font-size: 2rem;
+    line-height: 2;
 }
 
-.bi-arrow-repeat::before {
-    transform: scale(1.5);
-    transition: transform 0.5s;
+.Quiz .Quiz__OptionButtons {
+    max-width: 12rem;
+    margin: 0 auto 1rem;
 }
 
-.bi-arrow-repeat.upside-down::before {
-    transform: scale(1.5) rotate(180deg);
+.Quiz .Quiz__ControlButton {
+    width: 11rem;
+    padding: 0.25rem;
+    font-size: 1.25rem;
 }

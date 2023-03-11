@@ -1,3 +1,4 @@
+import React from "react"
 import Arabic from "../components/Arabic.jsx"
 
 const modes = [

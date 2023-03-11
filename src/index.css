@@ -1,7 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body, #root {
     height: 100%;
 }
 
 body {
     margin: 0;
+    background: linear-gradient(240deg, #00bfffcc, #00bfff00 80%),
+                linear-gradient(120deg, #00bfffcc, #00bfff00 80%),
+                linear-gradient(0deg, #ffffffcc, #ffffff00 80%);
+    font-family: sans-serif;
 }

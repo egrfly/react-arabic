@@ -1,0 +1,14 @@
+.Button {
+    border: 2px solid black;
+    border-radius: 0.25rem;
+    background-color: white;
+}
+
+.Button:not(:disabled) {
+    cursor: pointer;
+}
+
+.Button:disabled {
+    color: inherit;
+    opacity: 0.5;
+}

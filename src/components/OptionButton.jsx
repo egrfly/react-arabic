@@ -1,4 +1,5 @@
 import React from "react"
+import Button from "./Button.jsx"
 import "./OptionButton.css"
 
 function OptionButton({ optionLetter, targetLetter, selectedLetter, setSelectedLetter, answerMode, checkingState }) {
@@ -22,8 +23,8 @@ function OptionButton({ optionLetter, targetLetter, selectedLetter, setSelectedL
         }
     }
 
-    return <button className={`OptionButton ${getCorrectnessClass(optionLetter)} ${getClickabilityClass(checkingState)} w-100 p-3 fs-5`}
-                   onClick={() => setSelectedLetter(optionLetter)}>{answerMode.selector(optionLetter)}</button>
+    return <Button className={`OptionButton ${getCorrectnessClass(optionLetter)} ${getClickabilityClass(checkingState)}`}
+                   onClick={() => setSelectedLetter(optionLetter)}>{answerMode.selector(optionLetter)}</Button>
 }
 
 export default OptionButton
